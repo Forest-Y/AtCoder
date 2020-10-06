@@ -1,0 +1,11 @@
+n = int(input())
+t = list(map(int, input().split()))
+
+m = int(input())
+p, x = [0] * m, [0] * m
+for i in range(m):
+    p[i], x[i] = map(int, input().split())
+ans = sum(t)
+for i in range(m):
+    print(ans - t[p[i] - 1] + x[i])
+    

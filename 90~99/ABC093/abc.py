@@ -1,0 +1,5 @@
+s = input()
+s_list = list(s)
+s_list.sort()
+s = "".join(s_list)
+print("Yes" if s == "abc" else "No")
